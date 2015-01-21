@@ -352,6 +352,7 @@ namespace ProjectConverter
                     vsSolnFormat = VSSolutionFormat.VSSolutionFormatFactory(11);
                     vsSolnInfo.SolnFileVersionHeader = vsSolnFormat.SolnHeader;
                     vsSolnInfo.SolnFileFormatHeader = vsSolnFormat.SolnFormat;
+                    break;
             }//switch
 
             return vsSolnInfo;
@@ -417,6 +418,7 @@ namespace ProjectConverter
         private const string VS2008SolnHeader = "# Visual Studio 2008";
         private const string VS2010SolnHeader = "# Visual Studio 2010";
         private const string VS2012SolnHeader = "# Visual Studio 11";
+        private const string VS2013SolnHeader = "# Visual Studio 2013";
         public const string Format_Header = "Microsoft Visual Studio Solution File, Format Version";
 
 
