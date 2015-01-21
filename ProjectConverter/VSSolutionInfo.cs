@@ -26,21 +26,21 @@ namespace ProjectConverter
             m_projList = new List<VSProjectFileInfo>();
             //Check the validity of the solution
             m_vsVersion = CheckValidSolution(strFilePath);
-        }//constructor
+        } //constructor
 
         public string SolnFilePath
         {
             get;
             set;
-        }//property: SolnFilePath
+        } //property: SolnFilePath
 
         public string SolnDirectory
         {
             get
             {
                 return Path.GetDirectoryName(this.SolnFilePath);
-            }//get
-        }//property: SolnDirectory
+            }
+        } //property: SolnDirectory
 
         public string SolnFileFormatHeader { get; set; }
 
